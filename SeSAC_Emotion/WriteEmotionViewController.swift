@@ -17,14 +17,14 @@ final class WriteEmotionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureData()
-        configureButtonMenu()
+        configureButton()
     }
 
     @IBAction func didEmotionButtonTouched(_ sender: UIButton) {
         if let emotion = Emotion(rawValue: sender.tag),
            let count = data[emotion] {
-            data[emotion] = count + upCount
-            print("\(emotion.title) \(count + upCount)점!!")
+            data[emotion] = count + 1
+            print("\(emotion.title) \(count + 1)점!!")
         }
     }
 }
@@ -36,17 +36,37 @@ private extension WriteEmotionViewController {
         }
     }
 
-    func configureButtonMenu() {
-        let action = [
-            UIAction(title: "+1", handler: { _ in self.upCount = 1 }),
-            UIAction(title: "+5", handler: { _ in self.upCount = 5 }),
-            UIAction(title: "+10", handler: { _ in self.upCount = 10 })
-        ]
-        emotionButtonCollection.forEach {
-            $0.menu = UIMenu(
-                options: .displayInline,
-                children: action
-            )
+    func configureButton() {
+        emotionButtonCollection.forEach { button in
+            guard let emotion = Emotion(rawValue: button.tag),
+                  let menu = createButtonMenu(with: emotion)
+            else { return }
+
+            button.menu = menu
         }
+    }
+
+    func createButtonMenu(with emotion: Emotion) -> UIMenu? {
+        guard let _ = data[emotion] else { return nil }
+        let action = [
+            UIAction(title: "+1", handler: { _ in
+                self.data[emotion]! += 1
+                print("\(emotion.title) \(self.data[emotion]!)점!!")
+            }),
+            UIAction(title: "+5", handler: { _ in
+                self.data[emotion]! += 5
+                print("\(emotion.title) \(self.data[emotion]!)점!!")
+            }),
+            UIAction(title: "+10", handler: { _ in
+                self.data[emotion]! += 10
+                print("\(emotion.title) \(self.data[emotion]!)점!!")
+            }),
+            UIAction(title: "reset", handler: { _ in
+                self.data[emotion] = 0
+                print("\(emotion.title) \(self.data[emotion]!)점!!")
+            })
+        ]
+
+        return UIMenu(options: .displayInline, children: action)
     }
 }
