@@ -191,14 +191,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Cv-8d-AXf">
                                         <rect key="frame" x="16" y="0.0" width="361" height="77.666666666666671"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="완전행복지수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMz-pk-Iqw">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="완전행복지수" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMz-pk-Iqw">
                                                 <rect key="frame" x="20" y="27" width="104" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCv-X4-89g">
-                                                <rect key="frame" x="297.33333333333326" y="18.999999999999996" width="43.666666666666686" height="39.666666666666657"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCv-X4-89g">
+                                                <rect key="frame" x="297.33333333333331" y="18.999999999999996" width="43.666666666666686" height="39.666666666666657"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -209,7 +209,7 @@
                                             <constraint firstItem="GCv-X4-89g" firstAttribute="centerY" secondItem="0Cv-8d-AXf" secondAttribute="centerY" id="80P-kO-M3K"/>
                                             <constraint firstItem="SMz-pk-Iqw" firstAttribute="centerY" secondItem="0Cv-8d-AXf" secondAttribute="centerY" id="KSt-nL-bG6"/>
                                             <constraint firstAttribute="trailing" secondItem="GCv-X4-89g" secondAttribute="trailing" constant="20" id="NnB-Kq-Gex"/>
-                                            <constraint firstItem="GCv-X4-89g" firstAttribute="leading" secondItem="SMz-pk-Iqw" secondAttribute="trailing" id="SwB-0b-M6c"/>
+                                            <constraint firstItem="GCv-X4-89g" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SMz-pk-Iqw" secondAttribute="trailing" id="SwB-0b-M6c"/>
                                             <constraint firstItem="SMz-pk-Iqw" firstAttribute="leading" secondItem="0Cv-8d-AXf" secondAttribute="leading" constant="20" id="jI9-QD-OkR"/>
                                         </constraints>
                                     </view>
@@ -234,6 +234,7 @@
                                             <constraint firstItem="cSQ-Ns-oUa" firstAttribute="leading" secondItem="7FU-a2-9tp" secondAttribute="leading" constant="20" id="Jos-7o-yWq"/>
                                             <constraint firstItem="reS-fc-0YA" firstAttribute="centerY" secondItem="7FU-a2-9tp" secondAttribute="centerY" id="Ow9-lM-Z8f"/>
                                             <constraint firstAttribute="trailing" secondItem="reS-fc-0YA" secondAttribute="trailing" constant="20" id="cLq-iU-UKy"/>
+                                            <constraint firstItem="reS-fc-0YA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cSQ-Ns-oUa" secondAttribute="trailing" id="jha-MV-oB4"/>
                                             <constraint firstItem="cSQ-Ns-oUa" firstAttribute="centerY" secondItem="7FU-a2-9tp" secondAttribute="centerY" id="tzk-OA-urv"/>
                                         </constraints>
                                     </view>
@@ -256,6 +257,7 @@
                                         <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="pGa-7k-xlE" firstAttribute="centerY" secondItem="kBg-iO-Ffi" secondAttribute="centerY" id="Eao-HL-1OE"/>
+                                            <constraint firstItem="pGa-7k-xlE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dsL-5B-78G" secondAttribute="trailing" id="FQ3-Mg-F9K"/>
                                             <constraint firstItem="dsL-5B-78G" firstAttribute="leading" secondItem="kBg-iO-Ffi" secondAttribute="leading" constant="20" id="IfA-Ui-lYH"/>
                                             <constraint firstAttribute="trailing" secondItem="pGa-7k-xlE" secondAttribute="trailing" constant="20" id="Mpq-XR-fTY"/>
                                             <constraint firstItem="dsL-5B-78G" firstAttribute="centerY" secondItem="kBg-iO-Ffi" secondAttribute="centerY" id="yFC-00-a9R"/>
@@ -281,6 +283,7 @@
                                         <constraints>
                                             <constraint firstItem="Ghj-sV-pow" firstAttribute="centerY" secondItem="JEF-1x-x9r" secondAttribute="centerY" id="5Sg-pe-YFz"/>
                                             <constraint firstAttribute="trailing" secondItem="Ghj-sV-pow" secondAttribute="trailing" constant="20" id="BfB-XT-YBZ"/>
+                                            <constraint firstItem="Ghj-sV-pow" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nEM-mc-pl0" secondAttribute="trailing" id="NU0-BM-umo"/>
                                             <constraint firstItem="nEM-mc-pl0" firstAttribute="leading" secondItem="JEF-1x-x9r" secondAttribute="leading" constant="20" id="RVz-P9-FEc"/>
                                             <constraint firstItem="nEM-mc-pl0" firstAttribute="centerY" secondItem="JEF-1x-x9r" secondAttribute="centerY" id="x54-0U-CIk"/>
                                         </constraints>
@@ -307,6 +310,7 @@
                                             <constraint firstAttribute="trailing" secondItem="8lU-gK-5dK" secondAttribute="trailing" constant="20" id="GpH-S5-CTr"/>
                                             <constraint firstItem="ZZi-j5-fjc" firstAttribute="leading" secondItem="AgT-Wo-Jkw" secondAttribute="leading" constant="20" id="Pli-dw-zhQ"/>
                                             <constraint firstItem="8lU-gK-5dK" firstAttribute="centerY" secondItem="AgT-Wo-Jkw" secondAttribute="centerY" id="hfY-dX-sOR"/>
+                                            <constraint firstItem="8lU-gK-5dK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZZi-j5-fjc" secondAttribute="trailing" id="oJL-yZ-ykt"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -343,6 +347,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hy3-ja-6Th">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="Cdb-oc-4Jr" kind="relationship" relationship="viewControllers" id="W4d-AS-ipp"/>
@@ -353,11 +358,11 @@
             </objects>
             <point key="canvasLocation" x="116.79389312977099" y="3.5211267605633805"/>
         </scene>
-        <!--Item-->
+        <!--작성하기-->
         <scene sceneID="Xfp-2u-iyD">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cdb-oc-4Jr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="XSj-KT-dh7"/>
+                    <tabBarItem key="tabBarItem" title="작성하기" image="pencil.circle" catalog="system" id="XSj-KT-dh7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mch-fz-y3N">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -372,11 +377,11 @@
             </objects>
             <point key="canvasLocation" x="1043.5114503816794" y="3.5211267605633805"/>
         </scene>
-        <!--Item-->
+        <!--통계보기-->
         <scene sceneID="x3e-vn-s9X">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dY8-G1-R9D" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="dKy-88-1gF"/>
+                    <tabBarItem key="tabBarItem" title="통계보기" image="chart.bar" catalog="system" id="dKy-88-1gF"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="e0M-Ge-NeL">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -393,11 +398,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chart.bar" catalog="system" width="128" height="89"/>
         <image name="emoji1" width="53" height="51"/>
         <image name="emoji2" width="52" height="48"/>
         <image name="emoji3" width="50" height="38"/>
         <image name="emoji4" width="52" height="48"/>
         <image name="emoji5" width="54" height="50"/>
+        <image name="pencil.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

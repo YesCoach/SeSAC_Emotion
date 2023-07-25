@@ -21,8 +21,6 @@ private extension StaticsViewController {
     func configureUI() {
         moodViewCollection.forEach {
             $0.layer.cornerRadius = 10.0
-            // opacity 더 찾아보기
-            // $0.layer.opacity = 0.8
         }
     }
 }
