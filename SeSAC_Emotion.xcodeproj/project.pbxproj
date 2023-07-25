@@ -13,6 +13,7 @@
 		89C3C2B12A6FB19100F08B2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C3C2AF2A6FB19100F08B2C /* Main.storyboard */; };
 		89C3C2B32A6FB19300F08B2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89C3C2B22A6FB19300F08B2C /* Assets.xcassets */; };
 		89C3C2B62A6FB19300F08B2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C3C2B42A6FB19300F08B2C /* LaunchScreen.storyboard */; };
+		89C3C2BE2A6FB79500F08B2C /* StaticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C3C2BD2A6FB79500F08B2C /* StaticsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		89C3C2B22A6FB19300F08B2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89C3C2B52A6FB19300F08B2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C3C2B72A6FB19300F08B2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89C3C2BD2A6FB79500F08B2C /* StaticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				89C3C2AB2A6FB19100F08B2C /* SceneDelegate.swift */,
 				89C3C2AD2A6FB19100F08B2C /* ViewController.swift */,
 				89C3C2AF2A6FB19100F08B2C /* Main.storyboard */,
+				89C3C2BD2A6FB79500F08B2C /* StaticsViewController.swift */,
 				89C3C2B22A6FB19300F08B2C /* Assets.xcassets */,
 				89C3C2B42A6FB19300F08B2C /* LaunchScreen.storyboard */,
 				89C3C2B72A6FB19300F08B2C /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C3C2BE2A6FB79500F08B2C /* StaticsViewController.swift in Sources */,
 				89C3C2AE2A6FB19100F08B2C /* ViewController.swift in Sources */,
 				89C3C2AA2A6FB19100F08B2C /* AppDelegate.swift in Sources */,
 				89C3C2AC2A6FB19100F08B2C /* SceneDelegate.swift in Sources */,
