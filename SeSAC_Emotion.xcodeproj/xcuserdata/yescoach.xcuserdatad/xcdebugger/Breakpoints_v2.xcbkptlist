@@ -18,6 +18,38 @@
             endingLineNumber = "23"
             landmarkName = "configureUI()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C1CED22A-A6A3-4C23-BB8E-E6D720ACEDD4 - 499cac48f89b0a82"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UIView) -&gt; () in SeSAC_Emotion.StaticsViewController.configureUI() -&gt; ()"
+                  moduleName = "SeSAC_Emotion"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yescoach/SeSAC/SeSAC_Emotion/SeSAC_Emotion/StaticsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "C1CED22A-A6A3-4C23-BB8E-E6D720ACEDD4 - 499cac48f89b0aa3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UIView) -&gt; () in SeSAC_Emotion.StaticsViewController.configureUI() -&gt; ()"
+                  moduleName = "SeSAC_Emotion"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yescoach/SeSAC/SeSAC_Emotion/SeSAC_Emotion/StaticsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
