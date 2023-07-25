@@ -12,7 +12,6 @@ final class WriteEmotionViewController: UIViewController {
     @IBOutlet var emotionButtonCollection: [UIButton]!
 
     private var data: [Emotion: Int] = [:]
-    private var upCount = 1
 
     override func viewDidLoad() {
         super.viewDidLoad()
