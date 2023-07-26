@@ -12,9 +12,15 @@ final class StaticsViewController: UIViewController {
     @IBOutlet var moodViewCollection: [UIView]!
     @IBOutlet var emotionCountLabelCollection: [UILabel]!
 
+    private let userDefaultsManager = UserDefaultsManager.shared
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         configureData()
     }
 }
@@ -29,7 +35,7 @@ private extension StaticsViewController {
     func configureData() {
         emotionCountLabelCollection.forEach {
             if let emotion = Emotion(rawValue: $0.tag) {
-                let count = UserDefaultsManager.shared.loadEmotionData(emotion)
+                let count = userDefaultsManager.loadEmotionData(emotion)
                 $0.text = "\(count)점"
             }
         }

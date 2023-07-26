@@ -11,30 +11,21 @@ final class WriteEmotionViewController: UIViewController {
 
     @IBOutlet var emotionButtonCollection: [UIButton]!
 
-    private var data: [Emotion: Int] = [:]
+    private let userDefaultsManager = UserDefaultsManager.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureData()
         configureButton()
     }
 
     @IBAction func didEmotionButtonTouched(_ sender: UIButton) {
-        if let emotion = Emotion(rawValue: sender.tag),
-           let count = data[emotion] {
-            data[emotion] = count + 1
-            print("\(emotion.title) \(count + 1)점!!")
+        if let emotion = Emotion(rawValue: sender.tag) {
+            saveEmotionData(emotion, count: 1)
         }
     }
 }
 
 private extension WriteEmotionViewController {
-    func configureData() {
-        Emotion.allCases.forEach {
-            data[$0] = 0
-        }
-    }
-
     func configureButton() {
         emotionButtonCollection.forEach { button in
             guard let emotion = Emotion(rawValue: button.tag),
@@ -46,26 +37,27 @@ private extension WriteEmotionViewController {
     }
 
     func createButtonMenu(with emotion: Emotion) -> UIMenu? {
-        guard let _ = data[emotion] else { return nil }
-        let action = [
-            UIAction(title: "+1", handler: { _ in
-                self.data[emotion]! += 1
-                print("\(emotion.title) \(self.data[emotion]!)점!!")
+        // Closure 내에서 self 캡처시 WriteEmotionViewController의 Reference Count가 올라감
+        let actions = [
+            UIAction(title: "+1", handler: { [weak self] _ in
+                self?.saveEmotionData(emotion, count: 1)
             }),
-            UIAction(title: "+5", handler: { _ in
-                self.data[emotion]! += 5
-                print("\(emotion.title) \(self.data[emotion]!)점!!")
+            UIAction(title: "+5", handler: { [weak self] _ in
+                self?.saveEmotionData(emotion, count: 5)
             }),
-            UIAction(title: "+10", handler: { _ in
-                self.data[emotion]! += 10
-                print("\(emotion.title) \(self.data[emotion]!)점!!")
+            UIAction(title: "+10", handler: { [weak self] _ in
+                self?.saveEmotionData(emotion, count: 10)
             }),
-            UIAction(title: "reset", handler: { _ in
-                self.data[emotion] = 0
-                print("\(emotion.title) \(self.data[emotion]!)점!!")
+            UIAction(title: "reset", handler: { [weak self] _ in
+                self?.saveEmotionData(emotion, isReset: true)
             })
         ]
 
-        return UIMenu(options: .displayInline, children: action)
+        return UIMenu(options: .displayInline, children: actions)
+    }
+
+    func saveEmotionData(_ emotion: Emotion, count: Int = 0, isReset: Bool = false) {
+        userDefaultsManager.saveEmotionData(emotion,count: count, isReset: isReset)
+        print("\(emotion.title) \(userDefaultsManager.loadEmotionData(emotion))점!!")
     }
 }

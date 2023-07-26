@@ -17,10 +17,9 @@ final class UserDefaultsManager {
 }
 
 extension UserDefaultsManager {
-    func saveEmotionData(_ emotion: Emotion, count: Int) {
+    func saveEmotionData(_ emotion: Emotion, count: Int = 0, isReset: Bool = false) {
         let value = standard.integer(forKey: emotion.userDefaultsKey)
-
-        standard.setValue(value + count, forKey: emotion.userDefaultsKey)
+        standard.setValue(isReset ? 0 : (value + count) , forKey: emotion.userDefaultsKey)
     }
 
     func loadEmotionData(_ emotion: Emotion) -> Int {
