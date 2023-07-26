@@ -204,8 +204,8 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCv-X4-89g">
-                                                <rect key="frame" x="297.33333333333331" y="18.999999999999996" width="43.666666666666686" height="39.666666666666657"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCv-X4-89g">
+                                                <rect key="frame" x="292" y="18.999999999999996" width="49" height="39.666666666666657"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -229,8 +229,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reS-fc-0YA">
-                                                <rect key="frame" x="292.66666666666669" y="18.999999999999996" width="48.333333333333314" height="39.666666666666657"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reS-fc-0YA">
+                                                <rect key="frame" x="292" y="18.999999999999996" width="49" height="39.666666666666657"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -254,8 +254,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGa-7k-xlE">
-                                                <rect key="frame" x="292.66666666666669" y="18.999999999999996" width="48.333333333333314" height="39.666666666666657"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGa-7k-xlE">
+                                                <rect key="frame" x="292" y="18.999999999999996" width="49" height="39.666666666666657"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -279,8 +279,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghj-sV-pow">
-                                                <rect key="frame" x="292.66666666666669" y="19.333333333333311" width="48.333333333333314" height="39.666666666666657"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghj-sV-pow">
+                                                <rect key="frame" x="292" y="19.333333333333311" width="49" height="39.666666666666657"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -304,8 +304,8 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lU-gK-5dK">
-                                                <rect key="frame" x="292.66666666666669" y="18.999999999999996" width="48.333333333333314" height="39.666666666666657"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lU-gK-5dK">
+                                                <rect key="frame" x="292" y="18.999999999999996" width="49" height="39.666666666666657"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -340,6 +340,11 @@
                         <outletCollection property="moodViewCollection" destination="kBg-iO-Ffi" collectionClass="NSMutableArray" id="wyg-Ji-xZO"/>
                         <outletCollection property="moodViewCollection" destination="JEF-1x-x9r" collectionClass="NSMutableArray" id="hwN-Qc-twE"/>
                         <outletCollection property="moodViewCollection" destination="AgT-Wo-Jkw" collectionClass="NSMutableArray" id="bFe-Ym-bAe"/>
+                        <outletCollection property="emotionCountLabelCollection" destination="GCv-X4-89g" collectionClass="NSMutableArray" id="R0s-YJ-Sin"/>
+                        <outletCollection property="emotionCountLabelCollection" destination="reS-fc-0YA" collectionClass="NSMutableArray" id="3vc-HZ-bfZ"/>
+                        <outletCollection property="emotionCountLabelCollection" destination="pGa-7k-xlE" collectionClass="NSMutableArray" id="gjw-IM-dQO"/>
+                        <outletCollection property="emotionCountLabelCollection" destination="Ghj-sV-pow" collectionClass="NSMutableArray" id="cLy-ZU-IRU"/>
+                        <outletCollection property="emotionCountLabelCollection" destination="8lU-gK-5dK" collectionClass="NSMutableArray" id="v5U-2e-HrX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8fk-R7-El7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -352,6 +357,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="1b5-lj-BAv" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Hy3-ja-6Th">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
