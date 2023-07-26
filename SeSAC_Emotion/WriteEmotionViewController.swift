@@ -57,7 +57,11 @@ private extension WriteEmotionViewController {
     }
 
     func saveEmotionData(_ emotion: Emotion, count: Int = 0, isReset: Bool = false) {
-        userDefaultsManager.saveEmotionData(emotion,count: count, isReset: isReset)
+        if isReset {
+            userDefaultsManager.resetEmotionData(emotion)
+        } else {
+            userDefaultsManager.saveEmotionData(emotion, count: count)
+        }
         print("\(emotion.title) \(userDefaultsManager.loadEmotionData(emotion))점!!")
     }
 }
