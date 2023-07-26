@@ -25,4 +25,14 @@ extension Emotion {
         case .verySad: return "많이슬픈지수"
         }
     }
+
+    var userDefaultsKey: String {
+        switch self {
+        case .veryHappy: return "VerryHappy"
+        case .happy: return "Happy"
+        case .soso: return "Soso"
+        case .sad: return "Sad"
+        case .verySad: return "VerySad"
+        }
+    }
 }
