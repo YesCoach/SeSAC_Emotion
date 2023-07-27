@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		892E89642A72B9D500254B54 /* UserDefault+PropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892E89632A72B9D500254B54 /* UserDefault+PropertyWrapper.swift */; };
 		89C3C2AA2A6FB19100F08B2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C3C2A92A6FB19100F08B2C /* AppDelegate.swift */; };
 		89C3C2AC2A6FB19100F08B2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C3C2AB2A6FB19100F08B2C /* SceneDelegate.swift */; };
 		89C3C2B12A6FB19100F08B2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C3C2AF2A6FB19100F08B2C /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		892E89632A72B9D500254B54 /* UserDefault+PropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefault+PropertyWrapper.swift"; sourceTree = "<group>"; };
 		89C3C2A62A6FB19100F08B2C /* SeSAC_Emotion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC_Emotion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89C3C2A92A6FB19100F08B2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89C3C2AB2A6FB19100F08B2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				89C3C2BD2A6FB79500F08B2C /* StaticsViewController.swift */,
 				89C3C2C12A6FC41700F08B2C /* Emotion.swift */,
 				89C3C2C92A70F13800F08B2C /* UserDefaultsManager.swift */,
+				892E89632A72B9D500254B54 /* UserDefault+PropertyWrapper.swift */,
 				89C3C2B22A6FB19300F08B2C /* Assets.xcassets */,
 				89C3C2AF2A6FB19100F08B2C /* Main.storyboard */,
 				89C3C2B42A6FB19300F08B2C /* LaunchScreen.storyboard */,
@@ -152,6 +155,7 @@
 				89C3C2CA2A70F13800F08B2C /* UserDefaultsManager.swift in Sources */,
 				89C3C2AA2A6FB19100F08B2C /* AppDelegate.swift in Sources */,
 				89C3C2AC2A6FB19100F08B2C /* SceneDelegate.swift in Sources */,
+				892E89642A72B9D500254B54 /* UserDefault+PropertyWrapper.swift in Sources */,
 				89C3C2C22A6FC41700F08B2C /* Emotion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
